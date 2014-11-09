@@ -1,0 +1,190 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <base href="/"> -->
+    <title>BookShelf</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel='icon' href='/favicon.ico' type='image/x-icon'/ >
+    <link rel='apple-touch-icon' href='/favicon.png' />
+
+    <link rel="stylesheet" href="/lib/style.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap-theme.min.css" />
+
+    <script src="/lib/jquery/jquery-1.9.1.js"></script>
+    <script src="/lib/jquery/jquery.mixitup.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/lib/app.js"></script>
+  </head>
+
+  <body>
+
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+
+            <!-- <button class="filter" data-filter="all">All</button><br>
+
+
+              <button class="filter" data-filter=".religion">Религия</button>
+                <button class="filter" data-filter=".budh">Буддизм</button>
+                <button class="filter" data-filter=".dao">Даосизм</button>
+                <button class="filter" data-filter=".chr">Христианство</button>
+                <button class="filter" data-filter=".isl">Ислам</button><br>
+
+              <button class="filter" data-filter=".philosophy">Философия</button>
+                <button class="filter" data-filter=".avrelij">Марк Авреллий</button>
+                <button class="filter" data-filter=".epb">Елена Блаватская</button>
+                <button class="filter" data-filter=".sudz">Судзуки</button>
+                <button class="filter" data-filter=".shriram">Шри Рам</button>
+                <button class="filter" data-filter=".hal">Хорхе Ливрага</button>
+                <button class="filter" data-filter=".dlama">Далай Лама</button>
+                <button class="filter" data-filter=".jung">Карл Юнг</button><br>
+
+            <div id="containerPhil">
+              <div class="mix it javascipt" data-my-order="1">
+                <a href="/books/it/AriLerner-NG-Book-2013.pdf"><img src="/books/it/AriLerner-NG-Book-2013.png"></a>
+              </div>
+
+              <div class="mix religion" data-my-order="101"> Дхаммапада </div>
+              <div class="mix religion" data-my-order="101"> Дао де цзин </div>
+              <div class="mix religion" data-my-order="101"> Евангелие </div>
+              <div class="mix religion" data-my-order="101"> Коран </div>
+
+              <div class="mix philosophy" data-my-order="101"> Ключ к теософии </div>
+              <div class="mix philosophy" data-my-order="101"> Голос безмолвия </div>
+              <div class="mix philosophy" data-my-order="102"> Наука дзен </div>
+              <div class="mix philosophy" data-my-order="103"> Шри Рам </div>
+              <div class="mix philosophy" data-my-order="104"> Сокровенный смысл жизни </div>
+              <div class="mix philosophy" data-my-order="106"> Этика 3-го тисячелетия </div>
+              <div class="mix psychology" data-my-order="105"> Человек и символ </div>
+
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            <!-- <button class="filter" data-filter="all">All</button><br>
+
+              <button class="filter" data-filter=".literature">Литература</button>
+                <button class="filter" data-filter=".gesse">Гессе</button>
+                <button class="filter" data-filter=".tolkin">Толкин</button>
+                <button class="filter" data-filter=".dost">Достоевский</button>
+                <button class="filter" data-filter=".tolst">Толстой</button>
+                <button class="filter" data-filter=".bulg">Булгаков</button><br>
+
+            <div id="containerLit">
+              <div class="mix it javascipt" data-my-order="1">
+                <a href="/books/it/AriLerner-NG-Book-2013.pdf"><img src="/books/it/AriLerner-NG-Book-2013.png"></a>
+              </div>
+
+              <div class="mix literature" data-my-order="201"> Паломничество в страну Востока </div>
+              <div class="mix literature" data-my-order="202"> Властелин колец </div>
+              <div class="mix literature" data-my-order="203"> Братья Карамазовы </div>
+              <div class="mix literature" data-my-order="204"> Война и Мир </div>
+              <div class="mix literature" data-my-order="205"> Мастер и Маргарита </div>
+            </div> -->
+
+          <button class="filter" data-filter=".it">All</button>
+            <button class="filter" data-filter=".javascript">JavaScript</button>
+            <button class="filter" data-filter=".ruby">Ruby</button>
+
+            <div id="Container1" >
+              <div class="mix it javascript" data-myorder="1">
+                <a href="https://www.dropbox.com/s/27o9o5pdpuol2qu/1%20Eloquent%20Ruby%20-%20Russ%20Olsen.pdf?dl=0">
+                  <img src="/books/it/AriLerner-NG-Book-2013.png">
+                </a>
+
+              </div>
+              <div class="mix it javascript" data-my-order="1">
+              </div>
+              <div class="mix it ruby" data-myorder="4">book ruby</div>
+
+              <div class="gap"></div>
+              <div class="gap"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" id="itTab">
+        <div class="panel-heading" role="tab" id="headingIt">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseIt" aria-expanded="false" aria-controls="collapseIt">
+              IT
+            </a>
+          </h4>
+        </div>
+        <div id="collapseIt" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingIt">
+          <div class="panel-body">
+
+            <!-- <button class="filter" data-filter="all">All</button><br> -->
+              <!-- <button class="filter" data-filter=".it">IT</button>
+                <button class="filter" data-filter=".theory">Theory</button>
+                <button class="filter" data-filter=".linux">Linux</button>
+                <button class="filter" data-filter=".ruby">Ruby</button>
+                <button class="filter" data-filter=".rails">Rails</button>
+                <button class="filter" data-filter=".javascipt">JavaScipt</button><br>
+
+            <div id="containerIt">
+              <div class="mix javascipt" data-my-orfoder="1">
+                <a href="/books/it/AriLerner-NG-Book-2013.pdf"><img src="/books/it/AriLerner-NG-Book-2013.png"></a>
+              </div>
+              <div class="mix ruby" data-my-order="1">ruby</div>
+              <div class="mix rails" data-my-order="1">rails</div>
+              <div class="mix theory" data-my-order="1">art of programming</div>
+
+            </div> -->
+
+
+            <button class="filter1" data-filter=".it">All</button>
+            <button class="filter1" data-filter=".javascript">JavaScript</button>
+            <button class="filter1" data-filter=".ruby">Ruby</button>
+
+            <div id="Container2" >
+              <div class="mix it javascript" data-myorder="1">
+                <a href="https://www.dropbox.com/s/27o9o5pdpuol2qu/1%20Eloquent%20Ruby%20-%20Russ%20Olsen.pdf?dl=0">
+                  <img src="/books/it/AriLerner-NG-Book-2013.png">
+                </a>
+
+              </div>
+              <div class="mix it javascript" data-my-order="1">
+              </div>
+              <div class="mix it ruby" data-myorder="4">book ruby</div>
+
+              <div class="gap"></div>
+              <div class="gap"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+
+
+</html>
